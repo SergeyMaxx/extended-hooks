@@ -6,13 +6,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 import App from './app/App'
 
-const rootElement = document.getElementById('root')
-const root = ReactDOM.createRoot(rootElement)
-
-root.render(
-  <BrowserRouter>
-    <App/>
-  </BrowserRouter>
-)
+ReactDOM.createRoot(document.getElementById('root'))
+  .render(
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
+  )
 
 reportWebVitals()
